@@ -33,7 +33,6 @@ def lista_eventos(request):
     evento = Evento.objects.filter(usuario=usuario)
     dados = {'evento': evento}
     
-        
     return render(request,template, dados)
 
 @login_required(login_url='/login/')
